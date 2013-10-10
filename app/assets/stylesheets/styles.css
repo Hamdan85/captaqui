@@ -1,0 +1,251 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #444;
+}
+.supercol{
+    width: 100%;
+    min-width: 1000px;
+    height: 500px;
+    float: left;
+    background: url('/assets/banner.jpg') center no-repeat;
+    background-size: 100%;
+}
+.col{
+    width: 50%;
+    float: left;
+}
+.logo{
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.menu{
+    float: right;
+    margin:45px 50px 0 0;
+}
+.menu li{
+    float: left;
+    font-size: 16pt;
+    padding-left: 50px;
+}
+.menu li a{
+    text-decoration: none;
+    color: #555;
+}
+.menu li a:hover{
+    text-decoration: underline;
+}
+.clear{
+    clear: both;
+}
+.banner{
+    padding-top: 20px;
+}
+.bloco{
+    background-color: #d43e3e;
+    color: white;
+    padding:20px;
+    width: 420px;
+    line-height: 1.3;
+    border-radius: 7px;
+    -webkit-border-radius:7px;
+    -moz-border-radius:7px;
+    -o-border-radius:7px;
+    margin-top: 114px;
+}
+.bloco h1{
+    font-family: 'Lato', sans-serif;
+    font-size: 28pt;
+    font-weight: 900;
+
+}
+.bloco p{
+    font-family: 'Lato', sans-serif;
+    font-size: 22pt;
+}
+.bloco-2{
+    background-color: #634ee0;
+    color: white;
+    padding:20px;
+    width: 420px;
+    border-radius: 7px;
+    -webkit-border-radius:7px;
+    -moz-border-radius:7px;
+    -o-border-radius:7px;
+    line-height: 1.3;
+    margin-top: 114px;
+    margin-bottom: 19px;
+}
+.bloco-2 b{
+    font-weight: 800;
+}
+.bloco-2 p, .bloco-3 p{
+    font-family: 'Lato', sans-serif;
+    font-size: 22pt;
+}
+.bloco-2 a, .bloco-3 a{
+    text-decoration: none;
+    color: white;
+}
+.bloco-3{
+    background-color: #d43e3e;
+    color: white;
+    padding:20px;
+    width: 420px;
+    border-radius: 7px;
+    -webkit-border-radius:7px;
+    -moz-border-radius:7px;
+    -o-border-radius:7px;
+    line-height: 1.3;
+}
+article{
+    font-weight: 300;
+    position: relative;
+}
+article p{
+    width: 68%;
+    margin: 35px;
+    font-size: 16pt;
+}
+article small{
+    position: absolute;
+    top: 115px;
+    right: 120px;
+}
+.depoimentos:first-child p{
+    margin-bottom:50px;
+}
+.depoimentos{
+    margin: 50px 0;
+}
+.abre{
+    position: absolute;
+    width: 25px;
+    left: -10px;
+}
+.fecha{
+    position: absolute;
+    width: 25px;
+    right: 90px;
+    top:0px;
+}
+footer{
+    text-align: center;
+}
+.verde{
+    padding:50px;
+    background-color: #56c265;
+}
+.branco{
+    background-color: white;
+    margin: 50px 0;
+}
+.verde img{
+    width: 330px;
+}
+footer h2{
+    font-size: 22pt;
+    color: #444;
+    margin-top: 100px;
+}
+footer h3{
+    font-weight: 300;
+    font-size: 18pt;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+.formulario{
+    margin: 0 auto;
+    margin-left: 120px;
+}
+.formulario h2{
+    font-size: 20pt;
+    margin-top: 50px;
+}
+input[type=text]{
+    border-radius: 5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -o-border-radius:5px;
+    height: 35px;
+    border: none;
+    width: 325px;
+    background-color: #cecece;
+    font-size: 16pt;
+    padding-left: 10px;
+    margin:5px 0 5px 0px;
+}
+hr{
+    width: 80%;
+}
+input[type=submit]{
+    border: none;
+    background-color: #31c946;
+    color: white;
+    padding:8px 75px;
+    font-size: 14pt;
+    margin-left: 0px;
+    border-radius: 5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -o-border-radius:5px;
+    cursor: pointer;
+}
+
+.fb-like {
+
+    position: absolute;
+    top: 70px;
+    left: 470px;
+}

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class BetausersController < ApplicationController
   # GET /betausers
   # GET /betausers.json
@@ -44,13 +45,17 @@ class BetausersController < ApplicationController
 
     respond_to do |format|
       if @betauser.save
-        format.html { redirect_to @betauser, notice: 'Betauser was successfully created.' }
-        format.json { render json: @betauser, status: :created, location: @betauser }
+        format.html { render action: 'thanks' }
+        format.json { render json: @betauser }
       else
-        format.html { render action: "new" }
+        format.html { render action: 'new' }
         format.json { render json: @betauser.errors, status: :unprocessable_entity }
       end
     end
+  end
+
+  def thanks
+
   end
 
   # PUT /betausers/1

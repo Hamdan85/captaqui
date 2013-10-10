@@ -1,5 +1,61 @@
-<h1>New betauser</h1>
+<div id="fb-root" xmlns="http://www.w3.org/1999/html"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=546890322023473";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<header class="container">
+  <div class="col">
+    <%= image_tag("/assets/logo.png", :class => 'logo', :alt => 'logo') %>
+  </div>
+  <div class="col">
+    <div class="fb-like" data-href="https://facebook.com/captaqui" data-width="The pixel width of the plugin" data-height="The pixel height of the plugin" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="true" data-send="false"></div>
+    <ul class="menu">
+      <li><a href="#contato">Contato</a></li>
+      <li><a href="http://www.facebook.com/captaqui">Facebook</a></li>
 
-<%= render 'form' %>
+    </ul>
 
-<%= link_to 'Back', betausers_path %>
+  </div>
+  <div class="clear"></div>
+</header>
+<section class="supercol">
+  <div class="container">
+    <aside class="bloco">
+      <h1>Cultura ganhando vida!</h1>
+      <p>Nós conectamos produtores culturais a captadores profissionais para seu projeto encantar cada vez mais a vida das pessoas.</p>
+    </aside>
+  </div>
+</section>
+<div class="clear"></div>
+<section class="container">
+  <div class="col depoimentos">
+    <article>
+      <%= image_tag("/assets/abre.png", :class => 'abre', :alt => 'abre aspas') %><p>Com uma ferramenta como essa, podemos nos preocupar mais em desenvolver o projeto porque temos certeza que ele terá sua visibilidade. Bem pensado.</p><small>Glaura Lucas</small><img class="fecha" src="/assets/fecha.png" alt="fecha aspas">
+    </article>
+    <article>
+      <%= image_tag("/assets/abre.png", :class => 'abre', :alt => 'abre aspas') %><p>Ja tivemos muitos problemas com captação de projetos. Muita política, muita burocracia, pouco resultado. Com uma ferramenta desse tipo, temos mais chances de captação.</p><small>Bruna Bizzotto</small><img class="fecha" src="/assets/fecha.png" alt="fecha aspas">
+    </article>
+  </div>
+  <div class="col">
+    <div class="formulario">
+      <h2>Quanto pretende arrecadar?</h2>
+        <br />
+        <%= render 'form' %>
+    </div>
+  </div>
+  <div class="clear"></div>
+</section>
+
+<footer>
+  <div class="container" id="contato">
+    <hr>
+    <h2>euquero@captaqui.com</h2>
+    <h3>31 - 7563 0927</h3>
+  </div>
+  <div class="verde">
+    <%= image_tag("/assets/san-pedro.png", :alt => 'made in san pedro Valley') %>
+  </div>
+</footer>

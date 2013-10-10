@@ -1,8 +1,11 @@
+# -*- encoding : utf-8 -*-
 Captaqui::Application.routes.draw do
   resources :betausers
 
   root :to => 'betausers#new'
 
+  get 'reports' => 'betausers#index'
+  get 'thanks' => 'betausers#thanks'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

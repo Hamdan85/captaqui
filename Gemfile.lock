@@ -49,6 +49,8 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    meta-tags (1.5.0)
+      actionpack
     mime-types (1.25)
     multi_json (1.8.1)
     pg (0.17.0)
@@ -105,6 +107,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
   jquery-rails
+  meta-tags
   pg
   rails (= 3.2.14)
   sass-rails (~> 3.2.3)

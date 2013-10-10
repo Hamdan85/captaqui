@@ -1,7 +1,7 @@
 <%= form_for(@betauser) do |f| %>
   <% if @betauser.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@betauser.errors.count, "error") %> prohibited this betauser from being saved:</h2>
+      <h2>Um ou mais erros impediram cadastro de ser realizado:</h2>
 
       <ul>
       <% @betauser.errors.full_messages.each do |msg| %>
@@ -11,19 +11,13 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :howmuch %><br />
-    <%= f.text_field :howmuch %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+    <p>
+
+    <%= f.text_field :name, :placeholder => 'Nome' %>
+
+    <%= f.text_field :email, :placeholder => 'e-mail' %>
+
+    <%= f.text_field :howmuch, :placeholder => 'Quanto precisa (R$)?' %>
+
+    <%= f.submit 'Cadastrar para o Beta' %>
 <% end %>

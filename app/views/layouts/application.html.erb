@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Captaqui</title>
+  <%= display_meta_tags :site =>'Captaqui',
+                        :title => 'Conectando seu projeto aos recursos que ele precisa',
+                        :description => 'Nós conectamos produtores ou projetos culturais a captadores profissionais para seu projeto abrilhantar cada vez mais a vida das pessoas.',
+                        :keywords => 'lei de incentivo, cultura, rouanet, captação, recurso, projeto',
+                        :separator => '|'
+  %>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
 <%= yield %>
 
+<%= javascript_include_tag "application" %>
 </body>
 </html>

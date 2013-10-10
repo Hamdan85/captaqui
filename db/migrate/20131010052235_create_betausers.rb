@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class CreateBetausers < ActiveRecord::Migration
   def change
     create_table :betausers do |t|

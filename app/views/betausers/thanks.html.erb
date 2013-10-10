@@ -1,0 +1,49 @@
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=546890322023473";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<header class="container">
+  <div class="col">
+    <img class="logo" src="/assets/logo.png" alt="logo">
+  </div>
+  <div class="col">
+    <div class="fb-like" data-href="https://facebook.com/captaqui" data-width="The pixel width of the plugin" data-height="The pixel height of the plugin" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="true" data-send="false"></div>
+    <ul class="menu">
+      <li><a href="http://www.facebook.com/captaqui">Facebook</a></li>
+    </ul>
+  </div>
+  <div class="clear"></div>
+</header>
+<section class="supercol">
+  <div class="container">
+    <div class="col">
+      <aside class="bloco">
+        <% if @betauser %>
+            <h1>Muito obrigado pelo interesse <%= @betauser.name %>!</h1>
+        <% else %>
+            <h1>Obrigado pelo seu cadastro!</h1>
+        <% end %>
+        <p>Logo mais entraremos em contato para ajudar o seu projeto a crescer!</p>
+      </aside>
+    </div>
+    <div class="col">
+      <aside class="bloco-2">
+        <p>Enquanto isso, acompanhe nosso <b><a href="http://www.facebook.com/captaqui/">Facebook</a></b> e fique por dentro.</p>
+      </aside>
+      <aside class="bloco-3">
+        <p>Alguma dúvida? Envie um email para: <a href="mailto:euquero@captaqui.com">euquero@captaqui.com</a> </p>
+      </aside>
+    </div>
+  </div>
+  <div class="clear"></div>
+</section>
+<div class="clear"></div>
+<footer>
+  <div class="branco">
+    <%= image_tag("/assets/san-pedro-dark.png", :alt => 'made in san pedro Valley') %>
+  </div>
+</footer>

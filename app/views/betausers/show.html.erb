@@ -1,20 +1,19 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Name:</b>
+  <strong>Name:</strong>
   <%= @betauser.name %>
 </p>
 
 <p>
-  <b>Email:</b>
+  <strong>Email:</strong>
   <%= @betauser.email %>
 </p>
 
 <p>
-  <b>Howmuch:</b>
+  <strong>Amount:</strong>
   <%= @betauser.howmuch %>
 </p>
-
 
 <%= link_to 'Edit', edit_betauser_path(@betauser) %> |
 <%= link_to 'Back', betausers_path %>
